@@ -1,0 +1,69 @@
+# Macro file for example B1
+# 
+# Can be run in batch, without graphic
+# or interactively: Idle> /control/execute run1.mac
+#
+# Change the default number of workers (in multi-threading mode) 
+#/run/numberOfWorkers 4
+#
+# Initialize kernel
+#/run/initialize
+#
+/control/verbose 2
+/run/verbose 2
+/event/verbose 0
+/tracking/verbose 1
+# 
+
+#
+# Histograms
+#******************
+
+# total energy deposit in all detectors
+#/analysis/h1/set 0 100 0. 500. 
+#/analysis/h1/setXaxis 0 E[keV]
+
+# energy deposit in det#1
+#/analysis/h1/set 1 100 0. 200. 
+#/analysis/h1/setXaxis 1 E[keV]
+
+# absorbed dose
+#/analysis/h1/set 4 100 0. 5. picoGy
+#/analysis/h1/setXaxis 4 D[picoGy]
+
+# XY-distribution of e- entering det#1
+/analysis/h2/setX 1 2000 -15 15
+/analysis/h2/setY 1 2000 -7.5 7.5
+/analysis/h2/setXaxis 1 X[mm]
+/analysis/h2/setYaxis 1 Y[mm]
+
+
+# XY-distribution of e- entering det#2
+/analysis/h2/setX 2 2000 -15 15
+/analysis/h2/setY 2 2000 -7.5 7.5
+/analysis/h2/setXaxis 2 X[mm]
+/analysis/h2/setYaxis 2 Y[mm]
+
+# XY-distribution of e- entering det#3
+/analysis/h2/setX 3 2000 -15 15
+/analysis/h2/setY 3 2000 -7.5 7.5
+/analysis/h2/setXaxis 3 X[mm]
+/analysis/h2/setYaxis 3 Y[mm]
+
+# XY-distribution of e- entering det#4
+/analysis/h2/setX 4 2000 -15 15
+/analysis/h2/setY 4 2000 -7.5 7.5
+/analysis/h2/setXaxis 4 X[mm]
+/analysis/h2/setYaxis 4 Y[mm]
+	
+
+
+# 
+# electron 200 MeV to the direction (0.,0.,1.)
+#
+/gun/particle e-
+/gun/energy 200 MeV
+/tracking/verbose 2
+#
+/run/printProgress 1
+/run/beamOn 10000
