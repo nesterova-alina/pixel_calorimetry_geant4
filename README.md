@@ -1,1 +1,9 @@
-# pixel_calorimetry_geant4
+
+# Calorimetry based on silicon pixel detectors
+Nowadays calorimetry plays a key role both in experimental studies in high-energy physics and in applied research. Digital calorimeters can be used in nuclear medicine for precise measurements of the beam energy. Also these calorimeters can be used in various experiments in nuclear physics. For charge particles energy identification with high energy resolution the new methods of digital calorimetry can be applied. 
+
+Digital calorimeters consist of several segmented layers and register the total number of beam particles passing through the detector volume while analogue calorimeters detect the total deposited energy in a given volume. Digital calorimeters have a high granularity compared to other types of calorimeters, therefore the electromagnetic showers (caused by different particles) can be registered with high accuracy. In this work, the new type of compact digital electromagnetic calorimeter based on silicon pixel sensors for the electron beam energy (low-energy electrons from linear accelerator:  LINAC-200 at JINR) identification
+The present work goals:
+1. A digital calorimeter consisting of four layers of silicon pixel detectors and led absorbers was proposed for high-efficient  identification of electron beam energy.
+2. The absorbers parameters were calculated based on the geometric characteristics of the existing experimental setup. The method of the energy identification by using this digital calorimeter (associated with a change in the intensity of the registered particles on each detecting layer) has been developed (Calculations and Simulations).
+3. For developed digital calorimeter the GEANT4 Monte Carlo simulations were done  for different energies and absorbers thicknesses in order to find the best geometrical parameters of absorbers (Simulation).
